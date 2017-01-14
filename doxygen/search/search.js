@@ -342,25 +342,25 @@ function SearchBox(name, resultsPath, inFrame, label)
     {
        var domSearchBox = this.DOMSearchBox();
        this.DOMSearchClose().style.display = 'inline';
-       if (this.insideFrame)
-       {
+       //if (this.insideFrame)
+       //{
          var domPopupSearchResults = this.DOMPopupSearchResults();
          domPopupSearchResultsWindow.style.position = 'relative';
          domPopupSearchResultsWindow.style.display  = 'block';
          var width = document.body.clientWidth - 8; // the -8 is for IE :-(
          domPopupSearchResultsWindow.style.width    = width + 'px';
          domPopupSearchResults.style.width          = width + 'px';
-       }
-       else
-       {
-         var domPopupSearchResults = this.DOMPopupSearchResults();
-         var left = getXPos(domSearchBox) + 150; // domSearchBox.offsetWidth;
-         var top  = getYPos(domSearchBox) + 20;  // domSearchBox.offsetHeight + 1;
-         domPopupSearchResultsWindow.style.display = 'block';
-         left -= domPopupSearchResults.offsetWidth;
-         domPopupSearchResultsWindow.style.top     = top  + 'px';
-         domPopupSearchResultsWindow.style.left    = left + 'px';
-       }
+       //}
+       //else
+       //{
+       //  var domPopupSearchResults = this.DOMPopupSearchResults();
+       //  var left = getXPos(domSearchBox) + 150; // domSearchBox.offsetWidth;
+       //  var top  = getYPos(domSearchBox) + 20;  // domSearchBox.offsetHeight + 1;
+       //  domPopupSearchResultsWindow.style.display = 'block';
+       //  left -= domPopupSearchResults.offsetWidth;
+       //  domPopupSearchResultsWindow.style.top     = top  + 'px';
+       //  domPopupSearchResultsWindow.style.left    = left + 'px';
+       //}
     }
 
     this.lastSearchValue = searchValue;
