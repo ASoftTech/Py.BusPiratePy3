@@ -1,0 +1,48 @@
+site_name: BusPiratePy3
+site_url: http://ASoftTech.github.io/Py.BusPiratePy3
+repo_url: https://github.com/ASoftTech/Py.BusPiratePy3
+site_description: BusPiratePy3 - A python library for the bus pirate and python3
+edit_uri: edit/master/Docs/MkDocs/Docs
+
+pages:
+- Home: index.md
+#- Empty: empty.md
+#- Empty2: empty2.md
+#- FreeCAD:
+#    - File Importing: FreeCad/File-Import.md
+#    - Exporting GCode: FreeCad/Export-GCode.md
+#- Hsmworks:
+#    - Adaptive Clearing: Hsmworks/AdaptClear.md
+#    - Simulation: Hsmworks/Simulation.md
+#- Milling:
+#    - Connecting - USB: Milling/Connecting.md
+#    - Jogging / Moving the CNC: Milling/Jog.md
+#    - Loading and Setup: Milling/Loading-Setup.md
+#    - Simulation: Milling/Simulation.md
+#    - Milling Material: Milling/Material.md
+#    - Feed Rates: Milling/FeedRates.md
+#    - Milling: Milling/Milling.md
+#- Maintenance:
+#    - Device Overview: Maintenance/Device-Overview.md
+#    - Updating the Firmware: Maintenance/Updating-Firmware.md
+#    - Grbl Settings: Maintenance/Grbl-Settings.md
+#    - Todo: Maintenance/Todo.md
+
+
+
+#theme: cosmo
+theme: cyborg
+#theme: alabaster
+#theme: readthedocs
+#theme: mkdocs
+#theme: material
+
+# Overrides content within the selected theme
+theme_dir: theme
+
+markdown_extensions:
+    - smarty
+
+extra_css:
+    - css/highlight-fix.css
+    - css/highlight-custom.css
